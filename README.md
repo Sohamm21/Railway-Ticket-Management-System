@@ -33,5 +33,4 @@ Run the code on localhost in webbrowser
 ![contactus](https://github.com/Sohamm21/Railway-Ticket-Management-System/blob/main/readme%20images/Screenshot%20(210).png)
 ![tickets](https://github.com/Sohamm21/Railway-Ticket-Management-System/blob/main/readme%20images/Screenshot%20(211).png)
 ![bookingtickets](https://github.com/Sohamm21/Railway-Ticket-Management-System/blob/main/readme%20images/Screenshot%20(212).png)
-![receipt](https://github.com/Sohamm21/Railway-Ticket-Management-System/blob/main/readme%20images/Screenshot%20(213).png)
 ![receiptQR](https://github.com/Sohamm21/Railway-Ticket-Management-System/blob/main/readme%20images/Screenshot%20(214).png)
