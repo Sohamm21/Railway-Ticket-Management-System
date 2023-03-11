@@ -23,3 +23,6 @@ After going to src folder using cd command in the terminal type:
 nodemon app.js
 Run the code on localhost in webbrowser
 ```
+
+### Implementation
+![alt text](http://url/to/img.png)
