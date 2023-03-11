@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("/images/track_bg.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+#parallax-font {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+#home_welcome {
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 20px;
+}
+
+#holidays {
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 20px;
+}
+
+.input-div {
+    background-color: rgba(128, 128, 128, 0.301);
+    width: 480px;
+    height: 50%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 35px;
+    border: solid 2px;
+}
+
+.select-width {
+    width: 190px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    background-color: rgb(255, 111, 0) !important;
+    padding: 6px;
+    border-radius: 10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid 3px;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}
+
+.search-btn:hover {
+  transform: translateY(-1px);
+}
+
+.search-btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
