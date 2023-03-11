@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="/js/navbar.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fon ts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav style="z-index: 10; position: fixed;">
+        <div class="logo">
+            Tours and Travels
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="/../index.html">Home</a></li>
+            <li><a href="/html/login.html">Login</a></li>
+            <li><a href="/html/signup.html">Register</a></li>
+            <li><a href="/html/contact_us.html">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <!-- /Navigation Bar  -->
+
+    <!-- Parallax Effect -->
+    <div class="parallax border-bottom border-danger border-5" style="z-index: -1;">
+        <span id="parallax-font">
+            RAILWAY TICKET BOOKING
+        </span>
+    </div>
+    <!-- /Parallax Effect -->
+
+    <!-- Search Tickets -->
+        <h1 id="home_welcome">
+            Welcome to book your train tickets
+        </h1>
+
+        <!-- Search tickets input -->
+        <div class="input-div">
+            <form action="/html/tickets.html">
+                <label for="from" style="margin-bottom: 10px;"><b>Travelling Route: </b></label><br>
+                <select name="from" id="from" class="select-width">
+                    <option value="" disabled selected>From</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Nanded">Nanded</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Nagpur">Nagpur</option>
+                </select>
+                <select name="to" id="to" class="select-width">
+                    <option value="" disabled selected>To</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Nanded">Nanded</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Nagpur">Nagpur</option>
+                </select><br><br>
+                <label for="go" style="margin-bottom: 10px;"><b>Travelling Date: </b></label>
+                <br>
+                <input type="date" name="go" id="go" style="width: 195px;">
+                <input type="date" name="come" id="come" style="margin-left: 10px; width: 190px;">
+                <br><br>
+                <label for="people" style="margin-bottom: 10px;"><b>Travelling Persons: </b></label><br>
+                <select name="people" id="people" class="select-width">
+                    <option value="" disabled selected>People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select><br><br>
+                <label for="class" style="margin-bottom: 10px;"><b>Class Type: </b></label><br>
+                <select name="class" id="class" class="select-width">
+                    <option value="" disabled selected>Class</option>
+                    <option value="Anubhuti Class (EA)">Anubhuti Class (EA)</option>
+                    <option value="AC First Class">AC First Class</option>
+                    <option value="Sleeper(SL)">Sleeper(SL)</option>
+                    <option value="AC 2 Tier">AC 2 Tier</option>
+                </select><br><br>
+                <button class="search-btn" style="margin-left: 33%;">Search</button>
+            </form>
+        </div>
+        <!-- /Search tickets input -->
+        <div style="margin-top: 50px; width: 100%; height: 5px; background-color: rgb(220,53,69);"></div>
+    </div>
+    <!-- /Search Tickets -->
+
+    <div>
+        <h1 id="holidays">
+            Plan your holidays
+        </h1>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+        <div class="card">
+            <div class="face front">
+                <img src="/images/pune.jpg" alt="pune">
+                <h3>Pune</h3>
+            </div>
+            <div class="face back">
+                <h3>Pune</h3>
+                <p>
+                    Pune Info
+                </p>
+                <div class="link">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/images/agra.jpg" alt="agra">
+                <h3>Agra</h3>
+            </div>
+            <div class="face back">
+                <h3>Agra</h3>
+                <p>
+                    Agra Info
+                </p>
+                <div class="link">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/images/mumbai.jpg" alt="Mumbai">
+                <h3>Mumbai</h3>
+            </div>
+            <div class="face back">
+                <h3>Mumbai</h3>
+                <p>
+                    Mumbai Info
+                </p>
+                <div class="link">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/images/delhi.jpg" alt="Delhi">
+                <h3>Delhi</h3>
+            </div>
+            <div class="face back">
+                <h3>Delhi</h3>
+                <p>
+                    Delhi Info
+                </p>
+                <div class="link">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Cards -->
+
+</body>
+
+</html>

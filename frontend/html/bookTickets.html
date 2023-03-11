@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="/css/tickets.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="/js/navbar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fon ts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <nav style="z-index: 10; position: relative;">
+        <div class="logo">
+            Tours and Travels
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="/../index.html">Home</a></li>
+            <li><a href="/html/login.html">Login</a></li>
+            <li><a href="/html/signup.html">Register</a></li>
+            <li><a href="/html/contact_us.html">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container main-div p-5">
+        <div class="input-div">
+            <form onsubmit="return validateForm()" name="bookingForm" action="/html/bookingPage.html" method="get">
+                <input type="text" placeholder="Enter passenger name" name="passname">
+                <p class="errorMessage top-arrow"> </p>
+                <input type="number" placeholder="Enter age(in years)" name="age" style="width: 170px;" required>
+                <p class="ageError top-arrow"> </p>
+                <input type="text" placeholder="Phone" name="phone" required>
+                <p class="phoneError top-arrow"> </p>
+                <label for="gender" style="margin-bottom: 5px; margin-top: 10px; color: black;"><b>Select
+                        Gender</b></label><br>
+                <select name="gender" id="gender" class="select-width">
+                    <option value="" disabled selected></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br>
+                <label for="nationality"
+                    style="margin-bottom: 5px; margin-top: 10px; color: black;"><b>Nationality</b></label><br>
+                <select name="nationality" id="nationality" class="select-width">
+                    <option value="" disabled selected></option>
+                    <option value="India">India</option>
+                    <option value="England">England</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Bhutan">Bhutan</option>
+                </select>
+                <br>
+                <label for="class" style="margin-bottom: 5px; margin-top: 10px; color: black;"><b>Class Type:
+                    </b></label><br>
+                <select name="class" id="class" class="select-width">
+                    <option value="" disabled selected>Class</option>
+                    <option value="Anubhuti Class (EA)">Anubhuti Class (EA)</option>
+                    <option value="AC First Class">AC First Class</option>
+                    <option value="Sleeper(SL)">Sleeper(SL)</option>
+                    <option value="AC 2 Tier">AC 2 Tier</option>
+                </select>
+                <br>
+                <label for="people" style="margin-bottom: 5px; margin-top: 10px; color: black;"><b>Travelling Persons:
+                    </b></label><br>
+                <select name="people" id="people" class="select-width">
+                    <option value="" disabled selected>People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select><br><br>
+                <br><br>
+                <input type="submit" class="search-btn" value="Book" style="margin-left: 33%;">
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function validateForm() {
+            var nameVal = document.forms["bookingForm"]["passname"].value;
+            var ageVal = document.forms["bookingForm"]["age"].value;
+            var phoneVal = document.forms["bookingForm"]["phone"].value;
+            var phoneRegex = /^[6-9]\d{9}$/;
+            if (nameVal == null || nameVal == "") {
+                document.getElementsByClassName("errorMessage")[0].style.visibility = "visible";
+                document.getElementsByClassName("errorMessage")[0].innerHTML = "Please Fill out this field";
+                return false;
+            }
+            if (ageVal < 0 || ageVal > 100) {
+                document.getElementsByClassName("ageError")[0].style.visibility = "visible";
+                document.getElementsByClassName("ageError")[0].innerHTML = "Please enter correct age";
+                return false;
+            }
+            if (phoneRegex.test(phoneVal) == false) {
+                document.getElementsByClassName("phoneError")[0].style.visibility = "visible";
+                document.getElementsByClassName("phoneError")[0].innerHTML = "Please enter a valid phone number";
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

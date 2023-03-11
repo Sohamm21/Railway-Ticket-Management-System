@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/images/trainbg.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-div {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    width: 80%;
+    margin: 10%;
+    border-radius: 10px;
+    display: block;
+}
+
+.main-div a{
+    text-decoration: none;
+    color: orangered;
+}
+
+.inner-div {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 120px;
+    padding: 10px;
+}
+
+.inner-div:hover{
+    color: rgb(43, 43, 251);
+    transform: scale(1.01);
+}
